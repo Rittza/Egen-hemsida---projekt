@@ -1,0 +1,16 @@
+body{
+    background-color:slategrey;
+}
+h1{
+    color:whitesmoke;
+    font-size: 40px;
+}
+h2{
+    text-align:Center;
+    color:whitesmoke;
+    font-size:25px;
+}
+p{
+    text-align:center;
+    font-size:large;
+}
