@@ -11,6 +11,7 @@ h2{
     text-align:Center;
     color:whitesmoke;
     font-size:25px;
+    text-decoration: underline;
 }
 p{
     text-align:center;
@@ -33,12 +34,28 @@ p{
  nav li{
     text-align:center;
     list-style-type:none;
+    font-size: 1.5em;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 10px;
+    line-height: 2; 
  }
  .wrapper{
-    width:70%;
+    width: 100%;
     grid-template-columns: 2fr;
     grid-template-rows: 80px 50 auto 50px;
     grid-gap: 10px;
     display:grid;
-
+    margin:0 auto;
+    background-color:steelblue;
  }
+ table, th, td {
+    border: 1px solid;
+    text-align: center;
+ }
+ table{
+    width: 25%;
+ }
+tr:nth-child(even){
+    background-color:aqua;
+}
