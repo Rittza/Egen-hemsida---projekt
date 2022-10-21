@@ -1,15 +1,15 @@
 body{
-    background-color:slategrey;
+    background-color:rgb(27, 7, 39);
 }
 h1{
-    color:whitesmoke;
+    color:rgb(247, 15, 150);
     font-size: 40px;
     text-align:center;
     text-decoration:underline;
 }
 h2{
     text-align:Center;
-    color:whitesmoke;
+    color:black;
     font-size:25px;
     text-decoration: underline;
 }
@@ -17,12 +17,15 @@ p{
     text-align:center;
     font-size:large;
     color:whitesmoke;
+    font-style: italic;
+    font-size: smaller;
 }
 .arthas{
     width:450px;
     display: block;
     margin-left:auto;
     margin-right:auto;
+    height: auto;
 }
  nav>ul{
     display:grid;
@@ -39,6 +42,7 @@ p{
     border-radius: 10px;
     margin-right: 10px;
     line-height: 2; 
+    background-color: rgb(19, 13, 17);
  }
  .wrapper{
     width: 100%;
@@ -47,7 +51,7 @@ p{
     grid-gap: 10px;
     display:grid;
     margin:0 auto;
-    background-color:steelblue;
+    background-color:rgb(42, 44, 44)
  }
  table, th, td {
     border: 1px solid;
@@ -58,4 +62,10 @@ p{
  }
 tr:nth-child(even){
     background-color:aqua;
+}
+main{
+    background-color: rgb(53, 5, 53);
+}
+li a{
+    color: rgb(72, 8, 131);
 }
