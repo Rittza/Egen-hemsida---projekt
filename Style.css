@@ -1,15 +1,16 @@
 body{
-    background-color:rgb(27, 7, 39);
+    background-color:rgb(53,56,56);
 }
 h1{
-    color:rgb(247, 15, 150);
+    color:darkgrey;
     font-size: 40px;
     text-align:center;
     text-decoration:underline;
+    margin:0;
 }
 h2{
     text-align:Center;
-    color:black;
+    color:darkgrey;
     font-size:25px;
     text-decoration: underline;
 }
@@ -26,6 +27,13 @@ p{
     margin-left:auto;
     margin-right:auto;
     height: auto;
+}
+
+header{
+    grid-area:header;
+}
+nav{
+    grid-area:nav;
 }
  nav>ul{
     display:grid;
@@ -46,12 +54,17 @@ p{
  }
  .wrapper{
     width: 100%;
-    grid-template-columns: 2fr;
-    grid-template-rows: 80px 50 auto 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 50px auto 50px;
     grid-gap: 10px;
     display:grid;
     margin:0 auto;
-    background-color:rgb(42, 44, 44)
+    background-color:rgb(53, 56, 56);
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
  }
  table, th, td {
     border: 1px solid;
@@ -64,8 +77,19 @@ tr:nth-child(even){
     background-color:aqua;
 }
 main{
-    background-color: rgb(53, 5, 53);
+    grid-area:main;
+    background-color: rgb(48, 46, 46);
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-areas:". section1 .";
 }
 li a{
-    color: rgb(72, 8, 131);
+    color: grey;
+}
+main section{
+    grid-area:section1
+}
+section img{
+    Width:250px;
+    margin:0  auto;
 }
