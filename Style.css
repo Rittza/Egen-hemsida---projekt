@@ -60,7 +60,7 @@ nav{
     display:grid;
     margin:0 auto;
     background-color:rgb(53, 56, 56);
-    grid-template-areas:
+    grid-template-areas: 
     "header"
     "nav"
     "main"
@@ -80,8 +80,8 @@ main{
     grid-area:main;
     background-color: rgb(48, 46, 46);
     display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-areas:". section1 .";
+    grid-template-columns:1fr 1fr 1fr 1fr;
+      grid-template-areas:". section1 .";
 }
 li a{
     color: grey;
@@ -91,5 +91,29 @@ main section{
 }
 section img{
     Width:250px;
-    margin:0  auto;
+}
+
+#sida2 main{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#sida3 main{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.musik{
+    font-size: 45px;
+}
+.album1{
+    Width:300px
+}
+.album2{
+    width:300px;
+}
+.album3{
+    width:300px;
+}
+.album4{
+    width:300px;
+}
+.album5{
+    width:300px;
 }
