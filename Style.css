@@ -70,10 +70,13 @@ header nav{
     text-align: center;
  }
  table{
-    width: 25%;
+    width: auto;
  }
 tr:nth-child(even){
     background-color:aqua;
+}
+tr:nth-child(odd){
+    color:whitesmoke;
 }
 main{
     grid-area:main;
@@ -85,17 +88,11 @@ main{
 li a{
     color: grey;
 }
-main section{
-    grid-area:section1
-}
-section img{
-    Width:250px;
-}
 #index{
     margin-top: 1%;
 }
 #sida2 main{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto auto;
 }
 #sida3 main{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -125,5 +122,8 @@ a.github{
 }
 img.github{
     width: 50%;
+}
+li {
+    list-style: none;
 }
 
