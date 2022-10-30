@@ -1,28 +1,28 @@
 body{
-    background-color:rgb(53,56,56);
+    background-color:rgb(53,56,56); /*Bakrundsfärg på body */
 }
 h1{
-    color:darkgrey;
+    color:darkgrey;   /* Färg, storlek, position, dekoration för rubrik */
     font-size: 40px;
     text-align:center;
     text-decoration:underline;
     margin:0;
 }
 h2{
-    text-align:Center;
+    text-align:Center; /* Position, färg, storlek och dekoration på rubrik 2 */
     color:darkgrey;
     font-size:25px;
     text-decoration: underline;
 }
 p{
-    text-align:center;
+    text-align:center; /* position, storlek, färg, style på stycke*/
     font-size:large;
     color:whitesmoke;
     font-style: italic;
     font-size: smaller;
 }
 .arthas{
-    width:450px;
+    width:450px; /* Storlek, position på bild */
     display: block;
     margin-left:auto;
     margin-right:auto;
@@ -30,13 +30,13 @@ p{
 }
 
 header{
-    grid-area:header;
+    grid-area:header; /* position i grid för header */
 }
 header nav{
     grid-area:nav;
 }
- header nav>ul{
-    display:grid;
+ header nav>ul{ /* kolummer, position för header, lista och meny */
+    display:grid; 
     grid-template-columns: 1fr 1fr 1fr;
     padding:0;
     margin:0%;
@@ -53,7 +53,7 @@ header nav{
     background-color: rgb(19, 13, 17);
  }
  .wrapper{
-    width: 100%;
+    width: 100%; /* bredd, kolummer, rader, avståndm position för gränsnittsdesgin, header, footer och main. */
     grid-template-columns: 1fr;
     grid-template-rows: 80px auto 50px;
     grid-gap: 10px;
@@ -65,28 +65,28 @@ header nav{
     "main"
     "footer";
  }
- table, th, td {
+ table, th, td { /* inramning och position för tabell, celldatan och tabell header*/
     border: 1px solid;
     text-align: center;
  }
  table{
-    width: auto;
+    width: auto; /* auto bredd för tabell */
  }
 tr:nth-child(even){
-    background-color:aqua;
+    background-color:aqua; /* Varannan rad får bakrundsfärgen aqua, zebrastriping */
 }
 tr:nth-child(odd){
-    color:whitesmoke;
+    color:whitesmoke; /* Varannan rad får text och ramfärg vit */
 }
 main{
-    grid-area:main;
+    grid-area:main; /* position i grid, bakrunsfärg och kolummer för huvudinnehåll i main */
     background-color: rgb(48, 46, 46);
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
       grid-template-areas:". section1 .";
 }
 li a{
-    color: grey;
+    color: grey; 
 }
 #index{
     margin-top: 1%;
@@ -98,7 +98,7 @@ li a{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .musik{
-    font-size: 45px;
+    font-size: 60px;
 }
 .album1{
     Width:300px;
@@ -115,15 +115,21 @@ li a{
 .album5{
     width:300px;
 }
+.album6{
+    width:300px; /* Storlek för bilder på sida3, samt rubrik */
+}
 a.github{
     grid-column: 1/4;
     width: 50%;
     padding-left: 54%
 }
 img.github{
-    width: 50%;
-}
+    width: 50%;             /* Position i griden för bild och länk till bild på sida1 */
+}                         
 li {
-    list-style: none;
+    list-style: none; /* Tar bort prickar i listan på sida2 */
+}
+footer{
+    font-size: 100px; /* Storlek på footer */
 }
 
