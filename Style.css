@@ -32,17 +32,17 @@ p{
 header{
     grid-area:header;
 }
-nav{
+header nav{
     grid-area:nav;
 }
- nav>ul{
+ header nav>ul{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding:0;
     margin:0%;
     height: 100%;
  }
- nav li{
+ header nav li{
     text-align:center;
     list-style-type:none;
     font-size: 1.5em;
@@ -55,14 +55,13 @@ nav{
  .wrapper{
     width: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 50px auto 50px;
+    grid-template-rows: 80px auto 50px;
     grid-gap: 10px;
     display:grid;
     margin:0 auto;
     background-color:rgb(53, 56, 56);
-    grid-template-areas: 
+    grid-template-areas:
     "header"
-    "nav"
     "main"
     "footer";
  }
@@ -92,7 +91,9 @@ main section{
 section img{
     Width:250px;
 }
-
+#index{
+    margin-top: 1%;
+}
 #sida2 main{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -103,7 +104,7 @@ section img{
     font-size: 45px;
 }
 .album1{
-    Width:300px
+    Width:300px;
 }
 .album2{
     width:300px;
@@ -117,3 +118,12 @@ section img{
 .album5{
     width:300px;
 }
+a.github{
+    grid-column: 1/4;
+    width: 50%;
+    padding-left: 54%
+}
+img.github{
+    width: 50%;
+}
+
